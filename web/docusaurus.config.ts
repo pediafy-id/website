@@ -6,7 +6,7 @@ const config: Config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
   url: 'https://xsample.com',
-  baseUrl: '/web/',
+  baseUrl: '/',
   organizationName: 'pediafy-id', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
   trailingSlash: false,
