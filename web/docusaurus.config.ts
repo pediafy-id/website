@@ -9,6 +9,7 @@ const config: Config = {
   baseUrl: '/',
   organizationName: 'pediafy-id', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
