@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "my-site",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -16,15 +16,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "3.6.3",
-    "@docusaurus/plugin-content-blog": "^3.6.3",
-    "@docusaurus/plugin-content-docs": "^3.6.3",
-    "@docusaurus/plugin-content-pages": "^3.6.3",
-    "@docusaurus/plugin-google-analytics": "^3.6.3",
-    "@docusaurus/plugin-google-gtag": "^3.6.3",
-    "@docusaurus/plugin-google-tag-manager": "^3.6.3",
-    "@docusaurus/plugin-sitemap": "^3.6.3",
     "@docusaurus/preset-classic": "3.6.3",
-    "@docusaurus/theme-search-algolia": "^3.6.3",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",
@@ -32,11 +24,9 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@docusaurus/eslint-plugin": "^3.6.3",
     "@docusaurus/module-type-aliases": "3.6.3",
     "@docusaurus/tsconfig": "3.6.3",
     "@docusaurus/types": "3.6.3",
-    "gh-pages": "^6.2.0",
     "typescript": "~5.6.2"
   },
   "browserslist": {
