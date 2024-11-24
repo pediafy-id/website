@@ -5,7 +5,7 @@ const config: Config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://pediafy-id.github.io/website',
   baseUrl: '/',
   organizationName: 'pediafy-id', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
