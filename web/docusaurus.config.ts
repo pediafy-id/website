@@ -7,8 +7,8 @@ const config: Config = {
   favicon: 'img/favicon.ico',
   url: 'https://your-docusaurus-site.example.com',
   baseUrl: '/',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'pediafy-id', // Usually your GitHub org/user name.
+  projectName: 'website', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -23,6 +23,10 @@ const config: Config = {
       'classic',
       {
         docs: {
+          admonitions: {
+            keywords: ['note', 'tip', 'info', 'warning', 'danger'],
+            extendDefaults: true,
+          },
           path: 'docs',
           breadcrumbs: true,
           sidebarPath: './sidebars.ts',
@@ -41,10 +45,10 @@ const config: Config = {
         },
         blog: {
           path: 'blog',
-          feedOptions: {
+          /*feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
-          },
+          },*/
           editUrl:
             'https://github.com/pediafy-id/website/main/website/blog/',
           blogTitle: 'Blog title',
@@ -65,7 +69,20 @@ const config: Config = {
           blogTagsListComponent: '@theme/BlogTagsListPage',
           blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
           truncateMarker: /<!--\s*(truncate)\s*-->/,
-          showReadingTime: true,
+          readingTime: ({content, defaultReadingTime}) =>
+            defaultReadingTime({content, options: {wordsPerMinute: 100}}),
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
+            createFeedItems: async (params) => {
+              const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+              return defaultCreateFeedItems({
+                // keep only the 10 most recent blog posts in the feed
+                blogPosts: blogPosts.filter((item, index) => index < 10),
+                ...rest,
+              });
+            },
+          },
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -102,22 +119,30 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Pediafy',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Pediafy Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'dropdown',
+          label: 'Resources',
+          className: 'Resources',
           position: 'left',
-          label: 'Tutorial',
+          items: [
+            {
+              label: 'Articles',
+              to: '/blog',
+            },
+            {
+              label: 'Documentation',
+              to: '/docs/greeting',
+            },
+          ],
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
