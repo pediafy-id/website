@@ -7,3 +7,8 @@ pediafy:
   label: Pediafy
   permalink: /pediafy
   description: Pediafy All Tags
+
+ig:
+  label: Instagram
+  permalink: /Instagram
+  description: Instagram All Tags
