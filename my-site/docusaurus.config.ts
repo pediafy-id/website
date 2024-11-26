@@ -51,7 +51,8 @@ const config: Config = {
       title: 'Pediafy',
       logo: {
         alt: 'Pediafy Logo',
-        src: 'img/logo.svg',
+        src: 'img/pediafy-blue.svg',
+        srcDark: 'img/pediafy-light.svg',
       },
       items: [
         /*{
@@ -62,18 +63,51 @@ const config: Config = {
         },*/
         {
           type: 'dropdown',
-          label: 'Resources',
+          label: 'Services',
           position: 'left',
           items: [
             {
-              label: 'Documentation',
-              to: '/docs/intro',
+              label: 'Web Development',
+              to: '/services/website',
             },
             {
-              label: 'Articles',
+              label: 'Social Media Management',
+              to: '/services/social-media',
+            },
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'About Us',
+          position: 'left',
+          items: [
+            {
+              label: 'Profile',
+              to: '/blog',
+            },
+            {
+              label: 'Contact Us',
+              to: '/blog',
+            },
+            {
+              label: 'Showcase',
+              to: '/blog',
+            },
+            {
+              label: 'FAQs',
               to: '/blog',
             },
           ],
+        },
+        {
+          label: 'Documentation',
+          to: '/docs/intro',
+          position: 'left',
+        },
+        {
+          label: 'Articles',
+          to: '/blog',
+          position: 'left',
         },
       ],
     },
@@ -94,18 +128,18 @@ const config: Config = {
           ],
         },
         {
-          title: 'Company',
+          title: 'About Us',
           items: [
             {
-              label: 'About Us',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Profile',
+              to: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
               label: 'Brands',
               to: 'https://discordapp.com/invite/docusaurus',
             },
             {
-              label: 'Company Information',
+              label: 'Contact Us',
               to: 'https://x.com/docusaurus',
             },
           ],
