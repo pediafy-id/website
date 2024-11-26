@@ -6,7 +6,7 @@ on:
       - main
 
     paths:
-      - ".github/workflows/my-site.yml"
+      - ".github/workflows/deploy.yml"
       - "my-site/**"
 
 jobs:
