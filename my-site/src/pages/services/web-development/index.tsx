@@ -7,7 +7,7 @@ import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
-function WebsiteHeader() {
+function WebHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -28,11 +28,11 @@ function WebsiteHeader() {
   );
 }
 
-export default function Website(): JSX.Element {
+export default function Webdevelopment(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout>
-      <WebsiteHeader/>
+      <WebHeader/>
       <main>
         <HomepageFeatures/>
       </main>

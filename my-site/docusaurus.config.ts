@@ -68,7 +68,7 @@ const config: Config = {
           items: [
             {
               label: 'Web Development',
-              to: '/services/website',
+              to: '/services/web-development',
             },
             {
               label: 'Social Media Management',
