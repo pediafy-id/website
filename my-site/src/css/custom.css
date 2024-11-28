@@ -34,3 +34,9 @@
 .navbar__logo {
   pointer-events: none;
 }
+
+.Footer-Logo {
+  pointer-events: none;
+  width: auto;
+  height: auto;
+}

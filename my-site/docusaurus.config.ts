@@ -24,8 +24,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/pediafy-id/website/tree/main/my-site/docs',
         },
         blog: {
           showReadingTime: true,
@@ -33,8 +31,6 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:
-            'https://github.com/pediafy-id/website/tree/main/my-site/blog',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -46,21 +42,17 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
     navbar: {
+      hideOnScroll: true,
       title: 'Pediafy',
       logo: {
         alt: 'Pediafy Logo',
         src: 'img/pediafy-blue.svg',
         srcDark: 'img/pediafy-light.svg',
+        width: 'auto',
+        height: 'auto',
       },
       items: [
-        /*{
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },*/
         {
           type: 'dropdown',
           label: 'Services',
@@ -179,7 +171,12 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} pediafy.com`,
+      logo: {
+        className: 'Footer-Logo',
+        src: '/img/pediafy-blue.svg',
+        srcDark: '/img/pediafy-light.svg',
+      },
+      copyright: `Made With ❤️ By Pediafy.com`,
     },
     prism: {
       theme: prismThemes.github,

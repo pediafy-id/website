@@ -1,7 +1,7 @@
 ---
 slug: first-blog-post
 title: First Blog Post
-authors: [slorber, yangshun]
+authors: [umar, debsify]
 tags: [hola, docusaurus]
 ---
 

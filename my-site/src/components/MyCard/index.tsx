@@ -4,7 +4,7 @@ import { Card, CardContent, Typography, CardMedia } from '@mui/material';
 interface MyCardProps {
   title: string;
   description: string;
-  imagePath: string; // Path relatif ke gambar dalam folder 'static'
+  imagePath: string;
 }
 
 const MyCardComponents: React.FC<MyCardProps> = ({ title, description, imagePath }) => {
@@ -13,7 +13,7 @@ const MyCardComponents: React.FC<MyCardProps> = ({ title, description, imagePath
       <CardMedia
         component="img"
         height="140"
-        image={imagePath} // Menggunakan path relatif
+        image={imagePath}
         alt={title}
       />
       <CardContent>
