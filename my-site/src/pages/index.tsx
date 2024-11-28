@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import MyCardComponents from '@site/src/components/MyCard';
 
 import styles from './index.module.css';
 
@@ -35,6 +36,11 @@ export default function Home(): JSX.Element {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
+      <MyCardComponents
+      title="Judul Card"
+      description="Deskripsi card saya"
+      imagePath="/img/my-image.jpg" // Path relatif dari root
+      />
       <main>
         <HomepageFeatures />
       </main>
