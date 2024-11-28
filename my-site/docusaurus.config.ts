@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Create Website',
-  tagline: 'Create a website documentation',
+  title: 'Pediafy',
+  tagline: 'Pediafy Services',
   favicon: 'img/favicon.ico',
   url: 'https://pediafy.com',
   baseUrl: '/',
